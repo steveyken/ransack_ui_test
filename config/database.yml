@@ -1,0 +1,21 @@
+development: &development
+  adapter: postgresql
+  database: ransack_ui_test_development
+  username:
+  password:
+  host:     localhost
+  port:     5432
+  schema_search_path: public
+  min_messages: warning
+
+test:
+  <<: *development
+  database: ransack_ui_test_test
+
+production:
+  <<: *development
+  database: ransack_ui_test_production
+
+staging:
+  <<: *development
+  database: ransack_ui_test_staging
