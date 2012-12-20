@@ -37,9 +37,13 @@ gem 'jquery-ui-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+gem 'debugger'
 
-gem 'ransack_ffcrm'
+group :development do
+  gem 'quiet_assets'
+  gem 'thin'
+end
+
 gem 'ransack_ui', :github => "ndbroadbent/ransack_ui", :branch => 'master'
 
 gem 'select2-rails'
