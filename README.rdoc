@@ -6,11 +6,12 @@ This app demonstrates the quickest route to getting ransack_ui up running on you
 
 === Commands used to build this app
 
-1. rails new ransack_ui_test
-2. cd ransack_ui_test
-3. rails g scaffold Item name:string
-4. rake db:create; rake db:migrate
-5. Add the following snippet to app/controllers/items_controller.rb
+  rails new ransack_ui_test
+  cd ransack_ui_test
+  rails g scaffold Item name:string
+  rake db:create; rake db:migrate
+
+Then add the following snippet to app/controllers/items_controller.rb
 
   <%= ransack_ui_search %>
 
