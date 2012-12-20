@@ -3,7 +3,7 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 #
 #= require jquery.ui.widget
-#= require ransack_ui_jquery
+#= require ransack_ui_bootstrap
 
 $ ->
   $('#item_search').ransack_search_form()

@@ -15,7 +15,8 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer', :platforms => :ruby
+  gem 'less-rails'
 
   gem 'uglifier', '>= 1.0.3'
 end
@@ -40,3 +41,7 @@ gem 'jquery-ui-rails'
 
 gem 'ransack_ffcrm'
 gem 'ransack_ui', :github => "ndbroadbent/ransack_ui", :branch => 'master'
+
+gem 'select2-rails'
+
+gem 'twitter-bootstrap-rails'

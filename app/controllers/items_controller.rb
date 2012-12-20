@@ -5,11 +5,8 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    if params[:name]
-      @items = Item.where(:name => params[:name])
-    else
-      @items = Item.all
-    end
+    @ransack_search.build_sort(name: 'created_at', dir: 'desc') if @ransack_search.sorts.empty?
+    @items = @ransack_search.result
 
     respond_to do |format|
       format.html # index.html.erb
