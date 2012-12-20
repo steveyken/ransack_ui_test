@@ -1,8 +1,16 @@
 == Ransack UI Demo App
 
-Ransack UI provides a front-end to the awesome ransack search gem by Ernie Miller - https://github.com/ernie/ransack
+Ransack UI (https://github.com/ndbroadbent/ransack_ui) created by Nathan Broadbent (ndbroadbent), provides a front-end to the ransack search gem by Ernie Miller - https://github.com/ernie/ransack
 
 This app demonstrates the quickest route to getting ransack_ui up running on your rails app.
+
+=== Quick start
+
+1. Clone this repo
+2. Edit config/database.yml if needed
+3. bundle install; rake db:create; rake db:migrate
+4. rails server
+5. Visit http://localhost:3000/items
 
 === Commands used to build this app
 
@@ -11,7 +19,15 @@ This app demonstrates the quickest route to getting ransack_ui up running on you
   rails g scaffold Item name:string
   rake db:create; rake db:migrate
 
-Then add the following snippet to app/controllers/items_controller.rb
+Add the following to your Gemfile:
+
+  gem 'ransack_ui'
+
+Then
+
+  bundle install
+
+Now add this snippet to app/controllers/items_controller.rb
 
   <%= ransack_ui_search %>
 
