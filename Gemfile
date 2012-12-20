@@ -37,4 +37,5 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
-gem 'ransack_ui'
+gem 'ransack_ffcrm'
+gem 'ransack_ui', :github => "ndbroadbent/ransack_ui", :branch => 'master'
